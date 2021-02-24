@@ -30,10 +30,6 @@ public class Usuario {
 	
 	@NotNull
 	private String senha;
-	
-	@OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
-	@JsonIgnoreProperties("usuario")
-	private List<Usuario> usuario;
 
 	public long getId() {
 		return id;
@@ -66,14 +62,6 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-
-	public List<Usuario> getPostagem() {
-		return usuario;
-	}
-
-	public void setPostagem(List<Usuario> usuario) {
-		this.usuario = usuario;
-	}	
 
 }
 

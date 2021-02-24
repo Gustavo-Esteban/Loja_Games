@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/tb_produtos")
+@RequestMapping("/produtos")
 @CrossOrigin("*")
 public class ProdutoController {
 
